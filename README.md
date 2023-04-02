@@ -5,74 +5,62 @@
 
 ## Contents
 
-- [Assignment](#assignment)
-  * [Training](#training)
-  * [Hyperparameter Tuning](#hyperparameter-tuning)
-  * [Testing](#testing)
-- [Requirements](#basic-requirements)
+- [Target](#target)
+  * [Train](#train)
+  * [Parameter Seek](#parameter-seek)
+  * [Test](#test)
+- [Datasets](#datasets)
+- [Requirements](#requirements)
 - [Instructions](#instructions)
 
 
-## Assignment
-Construct a two-layer neural network classifier including the three parts below. 
+## Target
+Constructing a two-layer neural network classifier, including at least the following three code files/sections:
 
-### Training
-* Activation Functions
-* Back Propagation with Loss and Gradient Computation
-* Learning Rate Decay
-* L2-Regularization
-* Optimizer SGD
-* Model Saving
+### Train
+Activation function
+Calculation of back propagation, loss, and gradient
+Learning rate reduction strategy
+L2 regularization
+Optimizer SGD
+Save Model
 
-### Hyperparameter Tuning 
-* Learning Rate
-* Hidden Layer Size
-* Regularization
+### Perparameter Seek 
+Learning rate 
+Hidden layer size 
+Regularization intensity
 
-### Testing
-Load the model with tuned hyperparameters and output the 
-classification accuracy. 
+### Test
+Import the model, test it with the model after parameter search, and output the classification accuracy
 
-<br>
+## Datasets
+MNIST: https://academictorrents.com/details/323a0048d87ca79b68f12a6350a57776b6a3b7fb 
 
-Utilize the MNIST dataset, see more info at http://yann.lecun.com/exdb/mnist/. 
+**Can not** use pytorch, tensorflow or any python package, you can use numpy. 
 
-**DO NOT** use PyTorch, TensorFlow or any deep-learning python packages. NumPy is allowed. 
+Upload the code to your own public github repo, and edit the training and testing steps in the repo's readme file. The trained model is uploaded to online disks such as Baidu Cloud/google drive.
 
-Upload your code onto your github repository with instructions on training and testing process in a README file. The trained model should be uploaded onto a cloud drive. 
-
-## Basic Requirements
-
-1. Python 3
-2. Numpy
-3. Tqdm
-
+## Requirements
+1. Numpy
+2. Tqdm
+3. matplotlib
+4. pickle
+5. gzip
+6. time
 
 ## Instructions 
 
 * **neural_network.py**
 
 This is where we implement the Network class. One can customize arbitrary DNN models with it. 
+ 
+ * **mnist_train.py**
 
-* **Dataset**
-
-Download the MNIST dataset in pkl.gz format 
-<a href= https://academictorrents.com/details/323a0048d87ca79b68f12a6350a57776b6a3b7fb>here</a>. It is split into training set, validation set and the testing set with 50000, 10000 and 10000 figures respectively. 
-
-* **Model**
-
-A trained model with 98.46% accuracy on testing data is available at the <a href = https://pan.baidu.com/s/1G9xUypIUgDcwl42_x8xdxw>cloud drive</a>
-with extracting password '**owor**'. Use the following code to load the model.
-
-`nn = Network.load('mymodel.txt')`
+It illustrates an example of training the model and plotting the loss functions. With the given random seed anyone is able to reach a 99.994% accuracy on training data and 98.46% accuracy on testing data. It also involves instructions on loading and saving the model.
 
 * **plotter.py**
 
 An auxiliary function for plotting the training history. It requires Matplotlib.
-
-* **mnist_train.py**
-
-It illustrates an example of training the model and plotting the loss functions. With the given random seed anyone is able to reach a 99.994% accuracy on training data and 98.46% accuracy on testing data. It also involves instructions on loading and saving the model.
 
 * **mnist_train.ipynb**
 
