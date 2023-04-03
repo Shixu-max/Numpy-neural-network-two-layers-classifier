@@ -3,6 +3,12 @@
 
 <div align="center"> Author: 22110980014 Xu Shi</div>
 
+Homepage: https://github.com/Shixu-max/Numpy-neural-network-two-layers-classifier
+
+Model in Baidu Netdisk: https://pan.baidu.com/s/1hzkMCHe8OqT3ZuXBRyiuug
+
+where Baidu Netdisk's fetch code: t5jp
+
 ## Contents
 
 - [Target](#target)
@@ -10,8 +16,8 @@
   * [Parameter Seek](#parameter-seek)
   * [Test](#test)
 - [Datasets](#datasets)
-- [Requirements](#requirements)
-- [Instructions](#instructions)
+- [Packages](#packages)
+- [Files](#files)
 
 
 ## Target
@@ -36,11 +42,11 @@ Import the model, test it with the model after parameter search, and output the 
 ## Datasets
 MNIST: https://academictorrents.com/details/323a0048d87ca79b68f12a6350a57776b6a3b7fb 
 
-**Can not** use pytorch, tensorflow or any python package, you can use numpy. 
+Can't use pytorch, tensorflow or any python package, you can use numpy. 
 
 Upload the code to your own public github repo, and edit the training and testing steps in the repo's readme file. The trained model is uploaded to online disks such as Baidu Cloud/google drive.
 
-## Requirements
+## Packages
 1. Numpy
 2. Tqdm
 3. matplotlib
@@ -48,20 +54,18 @@ Upload the code to your own public github repo, and edit the training and testin
 5. gzip
 6. time
 
-## Instructions 
+## Files 
 
-* **neural_network.py**
+* **twolayerclassifier.py**
 
-This is where we implement the Network class. One can customize arbitrary DNN models with it. 
+This code file is which we tarin model, contains activation function; calculation of back propagation, loss, and gradient; learning rate reduction strategy; L2 regularization; optimizer SGD and save Model. 
  
- * **mnist_train.py**
 
-It illustrates an example of training the model and plotting the loss functions. With the given random seed anyone is able to reach a 99.994% accuracy on training data and 98.46% accuracy on testing data. It also involves instructions on loading and saving the model.
+* **figureplot.py**
 
-* **plotter.py**
-
-An auxiliary function for plotting the training history. It requires Matplotlib.
+This code is which we plot the process of training process. 
 
 * **mnist_train.ipynb**
 
 In the Jupyter notebook includes hyperparameter searching and visualizations besides simply training, saving and loading models. The last step, visualizing the weights by PCA, requires the python package Sklearn.
+
