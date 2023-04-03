@@ -65,7 +65,7 @@ This code file is which we tarin model, contains activation function; calculatio
 
 This code is which we plot the process of training process. 
 
-* **mnist_train.ipynb**
+* **main.ipynb**
 
-In the Jupyter notebook includes hyperparameter searching and visualizations besides simply training, saving and loading models. The last step, visualizing the weights by PCA, requires the python package Sklearn.
+The main Jupyter notebook contains train model, seek optimal model, test model and visualization.
 
