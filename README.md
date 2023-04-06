@@ -3,7 +3,7 @@
 
 <div align="center"> Author: 22110980014 Xu Shi</div>
 
-Homepage: https://github.com/Shixu-max/Numpy-neural-network-two-layers-classifier
+GitHub: https://github.com/Shixu-max/Numpy-neural-network-two-layers-classifier
 
 Model in Baidu Netdisk: https://pan.baidu.com/s/1hzkMCHe8OqT3ZuXBRyiuug
 
@@ -67,5 +67,5 @@ This code is which we plot the process of training process.
 
 * **main.ipynb**
 
-The main Jupyter notebook contains train model, seek optimal model, test model and visualization.
+The main Jupyter notebook contains train model, seek optimal model, test model and visualization. If you want to get the results in PDF, you should experiment in order. When you get the optimal parameters, you should change the parameters of 'Train' in the first part, then you can get the results of visualization. 
 
